@@ -1389,7 +1389,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./service-worker.js')
+                navigator.serviceWorker.register('https://www.ceferin.com/service-worker.js')
                     .then((reg) => {
                         console.log('Service worker registered.', reg);
                     });
@@ -1423,13 +1423,13 @@
         //}
 
         // CODELAB: Update cache names any time any of the cached files change.
-        const CACHE_NAME = 'static-cache-v2';
-        const DATA_CACHE_NAME = 'data-cache-v1';
-        // CODELAB: Add list of files to cache here.
-        const FILES_TO_CACHE = [
-            '/',
-            'https:www.ceferin.com/index.html'
-        ];
+        //const CACHE_NAME = 'static-cache-v2';
+        //const DATA_CACHE_NAME = 'data-cache-v1';
+        //// CODELAB: Add list of files to cache here.
+        //const FILES_TO_CACHE = [
+        //    '/',
+        //    'https:www.ceferin.com/index.html'
+        //];
     </script>
     <script>
         //let deferredPrompt;
@@ -1440,31 +1440,7 @@
         //    btnAdd.style.display = 'block';
         //});
 
-        //self.addEventListener('install', function (e) {
-        //    e.waitUntil(
-        //        caches.open('airhorner').then(function (cache) {
-        //            return cache.addAll([
-        //                '/',
-        //                '/index.html',
-        //                '/index.html?homescreen=1',
-        //                '/?homescreen=1',
-        //                '/styles/main.css',
-        //                '/scripts/main.min.js',
-        //                '/sounds/airhorn.mp3'
-        //            ]);
-        //        })
-        //    );
-        //});
-
-        //self.addEventListener('fetch', function (event) {
-        //    console.log(event.request.url);
-
-        //    event.respondWith(
-        //        caches.match(event.request).then(function (response) {
-        //            return response || fetch(event.request);
-        //        })
-        //    );
-        //});
+        
 
         /*install button */
         //btnAdd.addEventListener('click', (e) => {
