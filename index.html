@@ -1378,6 +1378,76 @@
     <script async src="https://www.ceferin.com/script.js" type="text/javascript"></script>
     <script async src="https://www.ceferin.com/lazysizes.min.js" type="text/javascript"></script>
 
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+            });
+        }
+        //CODELAB: Add code to get weather forecast from the caches object.
+        //if (!('caches' in window)) {
+        //    return null;
+        //}
+        //const url = 'https://www.ceferin.com/index.html';
+        //return caches.match(url)
+        //    .then((response) => {
+        //        if (response) {
+        //            return response.json();
+        //        }
+        //        return null;
+        //    })
+        //    .catch((err) => {
+        //        console.error('Error getting data from cache', err);
+        //        return null;
+        //    });
+        //CODELAB: Add code to call getForecastFromCache.
+        //getForecastFromCache(location.geo)
+        //    .then((forecast) => {
+        //        renderForecast(card, forecast);
+        //    });
+
+        //If the data on the element is newer, skip the update.
+        //if (lastUpdated >= data.currently.time) {
+        //    return;
+        //}
+
+        // CODELAB: Update cache names any time any of the cached files change.
+        const CACHE_NAME = 'static-cache-v2';
+        const DATA_CACHE_NAME = 'data-cache-v1';
+        // CODELAB: Add list of files to cache here.
+        const FILES_TO_CACHE = [
+            '/',
+            'https:www.ceferin.com/index.html'
+        ];
+    </script>
+    <script>
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            btnAdd.style.display = 'block';
+        });
+
+        btnAdd.addEventListener('click', (e) => {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    consle.log('User accepted the A2HS prompt');
+                }
+                deferredPrompt = null;
+            });
+        });
+
+
+        window.addEventListener('appinstalled', (evt) => {
+            app.logEvent('a2hs', 'installed');
+        })
+
+    </script>
     <script type="text/javascript">
         const inViewport = (entries, observer) => {
             entries.forEach(entry => {
@@ -1429,5 +1499,6 @@
             }
         }
     </script>
+
 </body>
 </html>
