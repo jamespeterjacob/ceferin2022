@@ -1432,13 +1432,13 @@
         ];
     </script>
     <script>
-        let deferredPrompt;
+        //let deferredPrompt;
 
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            btnAdd.style.display = 'block';
-        });
+        //window.addEventListener('beforeinstallprompt', (e) => {
+        //    e.preventDefault();
+        //    deferredPrompt = e;
+        //    btnAdd.style.display = 'block';
+        //});
 
         //self.addEventListener('install', function (e) {
         //    e.waitUntil(
@@ -1456,20 +1456,31 @@
         //    );
         //});
 
-        btnAdd.addEventListener('click', (e) => {
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    consle.log('User accepted the A2HS prompt');
-                }
-                deferredPrompt = null;
-            });
-        });
+        //self.addEventListener('fetch', function (event) {
+        //    console.log(event.request.url);
+
+        //    event.respondWith(
+        //        caches.match(event.request).then(function (response) {
+        //            return response || fetch(event.request);
+        //        })
+        //    );
+        //});
+
+        /*install button */
+        //btnAdd.addEventListener('click', (e) => {
+        //    deferredPrompt.prompt();
+        //    deferredPrompt.userChoice.then((choiceResult) => {
+        //        if (choiceResult.outcome === 'accepted') {
+        //            consle.log('User accepted the A2HS prompt');
+        //        }
+        //        deferredPrompt = null;
+        //    });
+        //});
 
 
-        window.addEventListener('appinstalled', (evt) => {
-            app.logEvent('a2hs', 'installed');
-        })
+        //window.addEventListener('appinstalled', (evt) => {
+        //    app.logEvent('a2hs', 'installed');
+        //})
 
     </script>
     <script type="text/javascript">
