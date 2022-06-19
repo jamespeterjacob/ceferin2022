@@ -2583,17 +2583,17 @@ textarea.w-input, textarea.w-select {
         position: static
     }
 
-    .section.sales-guide-section {
-        padding-bottom: 0;
-        background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(21,22,35,.85)),to(rgba(21,22,35,.85))),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5f31761dc6b25caae27db920_pexels-quintin-gellar-313782%20(1).jpg");
-        background-image: linear-gradient(180deg,rgba(21,22,35,.85),rgba(21,22,35,.85)),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5f31761dc6b25caae27db920_pexels-quintin-gellar-313782%20(1).jpg");
-        background-position: 0 0,50% 0;
-        background-size: auto,cover;
-        background-repeat: repeat,no-repeat;
-        background-attachment: scroll,fixed;
-        background-clip: border-box;
-        -webkit-text-fill-color: inherit
-    }
+.section.sales-guide-section {
+    padding-bottom: 0;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(21,22,35,.85)),to(rgba(21,22,35,.85))),url("https://www.ceferin.com/buildings.webp");
+    background-image: linear-gradient(180deg,rgba(21,22,35,.85),rgba(21,22,35,.85)),url("https://www.ceferin.com/buildings.webp");
+    background-position: 0 0,50% 0;
+    background-size: auto,cover;
+    background-repeat: repeat,no-repeat;
+    background-attachment: scroll,fixed;
+    background-clip: border-box;
+    -webkit-text-fill-color: inherit
+}
 
     .section.patterned-section {
         background-image: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.5)),to(hsla(0,0%,100%,.5))),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5ef1035e9e49a0368b02a51f_webb.png");
