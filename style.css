@@ -2559,25 +2559,25 @@ textarea.w-input, textarea.w-select {
         background-size: auto,auto
     }
 
-    .section.features-section {
-        background-image: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.5)),to(hsla(0,0%,100%,.5))),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5ef1035e9e49a0368b02a51f_webb.png");
-        background-image: linear-gradient(180deg,hsla(0,0%,100%,.5),hsla(0,0%,100%,.5)),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5ef1035e9e49a0368b02a51f_webb.png");
-        background-position: 0 0,50% 50%;
-        background-size: auto,auto
-    }
+.section.features-section {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.5)),to(hsla(0,0%,100%,.5))),url("https://www.ceferin.com/webb.webp");
+    background-image: linear-gradient(180deg,hsla(0,0%,100%,.5),hsla(0,0%,100%,.5)),url("https://www.ceferin.com/webb.webp");
+    background-position: 0 0,50% 50%;
+    background-size: auto,auto
+}
 
     .section.dark-section {
         background-color: #151623
     }
 
-    .section.sales-cta-section {
-        padding-top: 8em;
-        padding-bottom: 8em;
-        background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(21,22,35,.25)),to(rgba(21,22,35,.25))),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5eeb827a0e15760863d619e5_alice-kang-Bc_uN5PeErA-unsplash%20(1).jpg");
-        background-image: linear-gradient(180deg,rgba(21,22,35,.25),rgba(21,22,35,.25)),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5eeb827a0e15760863d619e5_alice-kang-Bc_uN5PeErA-unsplash%20(1).jpg");
-        background-position: 0 0,50% 50%;
-        background-size: auto,cover
-    }
+.section.sales-cta-section {
+    padding-top: 8em;
+    padding-bottom: 8em;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(21,22,35,.25)),to(rgba(21,22,35,.25))),url("https://www.ceferin.com/office.webp");
+    background-image: linear-gradient(180deg,rgba(21,22,35,.25),rgba(21,22,35,.25)),url("https://www.ceferin.com/office.webp");
+    background-position: 0 0,50% 50%;
+    background-size: auto,cover
+}
 
     .section.user-guide {
         position: static
@@ -2595,12 +2595,12 @@ textarea.w-input, textarea.w-select {
     -webkit-text-fill-color: inherit
 }
 
-    .section.patterned-section {
-        background-image: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.5)),to(hsla(0,0%,100%,.5))),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5ef1035e9e49a0368b02a51f_webb.png");
-        background-image: linear-gradient(180deg,hsla(0,0%,100%,.5),hsla(0,0%,100%,.5)),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5ef1035e9e49a0368b02a51f_webb.png");
-        background-position: 0 0,50% 50%;
-        background-size: auto,auto
-    }
+.section.patterned-section {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.5)),to(hsla(0,0%,100%,.5))),url("https://www.ceferin.com/webb.webp");
+    background-image: linear-gradient(180deg,hsla(0,0%,100%,.5),hsla(0,0%,100%,.5)),url("https://www.ceferin.com/webb.webp");
+    background-position: 0 0,50% 50%;
+    background-size: auto,auto
+}
 
     .logo-container {
         position: relative;
