@@ -2506,11 +2506,12 @@ textarea.w-input, textarea.w-select {
         background-color: #fff
     }
 
-    .section.intro-section {
-        padding-top: 4em;
-        padding-bottom: 4em;
-        background-color: #151623
-    }
+.section.intro-section {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-color: #151623;
+    background-image: linear-gradient(to right bottom, #151623, #ff4b27);
+}
 
     .section.video-section {
         padding: 0
