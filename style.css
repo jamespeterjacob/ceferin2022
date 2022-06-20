@@ -2152,7 +2152,7 @@ textarea.w-input, textarea.w-select {
         }
 
     .mac {
-         width: 100px;
+        width: 100px;
         height: 100px;
         position: absolute;
         width: 40%;
@@ -2161,7 +2161,7 @@ textarea.w-input, textarea.w-select {
         right: 20px;
         animation: macmove 3s;
         overflow: visible;
-         filter:brightness(300%); backdrop-filter:drop-shadow(10%)
+        
     }
 
     @keyframes macmove {
@@ -2218,7 +2218,7 @@ textarea.w-input, textarea.w-select {
         animation-fill-mode: forwards;
         opacity: 0;
         cursor: pointer;
-        filter: brightness(200%); 
+        /*filter: brightness(200%); */
     }
 
 
@@ -2251,7 +2251,7 @@ textarea.w-input, textarea.w-select {
         animation-fill-mode: forwards;
         opacity: 0;
          filter: brightness(100%);
-    backdrop-filter: contrast(500%)
+        /*backdrop-filter: contrast(500%)*/
     }
 
     @keyframes mobilemove {
@@ -2267,10 +2267,6 @@ textarea.w-input, textarea.w-select {
             opacity: 1;
         }
     }
-
-
-    
-
 
     .section.hero.parallax-hero {
         overflow: hidden;
