@@ -2206,12 +2206,12 @@ textarea.w-input, textarea.w-select {
 
 
     .tab {
-         width: 100px;
-        height: 100px;
+         width: 400px;
+        height: auto;
         display: inline-block;
         position: absolute;
-        max-width: 30%;
-        height: auto;
+        /*max-width: 30%;
+        height: auto;*/
         top:300px;
         animation: tabmove 3s;
         animation-delay: 2s;
