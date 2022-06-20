@@ -2510,7 +2510,7 @@ textarea.w-input, textarea.w-select {
     padding-top: 4em;
     padding-bottom: 4em;
     background-color: #151623;
-    background-image: linear-gradient(to right bottom, #151623, #ff4b27);
+    
 }
 
     .section.video-section {
@@ -3048,6 +3048,8 @@ textarea.w-input, textarea.w-select {
             -ms-flex-item-align: stretch;
             -ms-grid-row-align: stretch;
             align-self: stretch;
+            background-color: #151623;
+            background-image: linear-gradient(to right bottom, #151623, #ff4b27);
         }
 
             .container.hero-container.parallax-hero-container {
