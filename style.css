@@ -2154,7 +2154,6 @@ textarea.w-input, textarea.w-select {
     .mac {
          width: 100px;
         height: 100px;
-        background: red;
         position: absolute;
         width: 40%;
         height: auto;
@@ -2209,8 +2208,6 @@ textarea.w-input, textarea.w-select {
     .tab {
          width: 100px;
         height: 100px;
-        background: red;
-
         display: inline-block;
         position: absolute;
         max-width: 30%;
@@ -2221,8 +2218,7 @@ textarea.w-input, textarea.w-select {
         animation-fill-mode: forwards;
         opacity: 0;
         cursor: pointer;
-        filter: brightness(200%); src="./ipadweb.png"
-    backdrop-filter: drop-shadow(10%) ;
+        filter: brightness(200%); 
     }
 
 
@@ -2246,7 +2242,6 @@ textarea.w-input, textarea.w-select {
     .mobile {
          width: 100px;
         height: 100px;
-        background: red;
         position: absolute;
         width: 10%;
         height: auto;
@@ -2274,28 +2269,7 @@ textarea.w-input, textarea.w-select {
     }
 
 
-    .watch {
-         width: 100px;
-        height: 100px;
-        background: red;
-        position: relative;
-        animation: watchmove 3s;
-        animation-delay: 9s;
-        animation-fill-mode: forwards;
-        opacity: 0;
-    }
-
-    @keyframes watchmove {
-        from {
-            right: -550px;
-            opacity: 1;
-        }
-
-        to {
-            right: 350px;
-            opacity: 1;
-        }
-    }
+    
 
 
     .section.hero.parallax-hero {
@@ -7019,5 +6993,5 @@ textarea.w-input, textarea.w-select {
         font-style: normal;
         font-display: auto;
     }  
-        }
-    }
+        
+    
