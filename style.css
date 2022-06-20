@@ -2140,7 +2140,7 @@ textarea.w-input, textarea.w-select {
             -ms-flex-align: stretch;
             align-items: stretch;
             background-color: #151623;
-            background-image: linear-gradient(to right bottom, #151623, #151623, #ff4b27);
+            /*background-image: linear-gradient(to right bottom, #151623, #151623, #ff4b27);*/
             /*background-image: linear-gradient(to bottom right, #151623, #151623a1, #ff4b2785);
              background-image: -webkit-gradient(linear,left top,left bottom,from(#151623),color-stop(40%,transparent)),-webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(95%,#151623)),-webkit-gradient(linear,left top,left bottom,from(rgba(21,22,35,.25)),to(rgba(21,22,35,.25))),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5eee58d2299cb92534e6a949_id-interiors-VWt1BBQwwtU-unsplash%20(1).jpg");
              background-image: linear-gradient(180deg,#151623,transparent 40%),linear-gradient(180deg,transparent,#151623 95%),linear-gradient(180deg,rgba(21,22,35,.25),rgba(21,22,35,.25)),url("https://assets.website-files.com/5ee8e894dfcfd4765c67b3cc/5eee58d2299cb92534e6a949_id-interiors-VWt1BBQwwtU-unsplash%20(1).jpg");
