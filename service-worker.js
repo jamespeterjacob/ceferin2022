@@ -61,10 +61,8 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         addResourcesToCache([
             './',
-            'https://www.ceferin.com',
             'https://www.ceferin.com/index.html',
             'https://www.ceferin.com/style.css',
-            'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js',
             'https://www.ceferin.com/clogo.svg',
             'https://www.ceferin.com/macweb.webp',
             'https://www.ceferin.com/ipadweb.webp',
