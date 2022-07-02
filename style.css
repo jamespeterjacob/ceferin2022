@@ -3357,8 +3357,8 @@ textarea.w-input, textarea.w-select {
         -webkit-transition: color .4s ease-in-out;
         transition: color .4s ease-in-out;
         color: #151623;
-        font-size: 12px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: bold;
         letter-spacing: .5em;
         text-transform: uppercase
     }
