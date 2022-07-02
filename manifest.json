@@ -41,6 +41,6 @@
   ],
   "start_url": "https://www.ceferin.com",
   "display": "standalone",
-  "background_color": "#151623",
-  "theme_color": "#151623"
+  "background_color": "transparent",
+  "theme_color": "transparent"
 }
