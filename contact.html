@@ -120,11 +120,29 @@
             }
         }
     </style>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfCD9YgAAAAAD0ggi88DxBxwcOgGIf0jAzWo1aN"></script>
+    <script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.enterprise.ready(async () => {
+                const token = await grecaptcha.enterprise.execute('6LfCD9YgAAAAAD0ggi88DxBxwcOgGIf0jAzWo1aN', { action: 'LOGIN' });
 
+            });
+        }
+    </script>
+    <script>
+        grecaptcha.enterprise.ready(function () {
+            grecaptcha.enterprise.execute('site_key', { action: 'homepage' }).then(function (token) {
+                // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+                // reCAPTCHA Enterprise to the end user's browser.
+                // This token must be validated by creating an assessment.
+                // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+            });
+        });
+    </script>
 </head>
-<body>
+<body oncontextmenu="return false">
     <div class="main" style="width: 100%;">
-
         <div data-w-id="98fdd1f9-5ab3-db13-fe15-8c570581527d" class="section hero wf-section" style="height: 400px;">
             <!--Mobile Navbar-->
             <div class="navbar">
@@ -473,8 +491,8 @@
                     <h4>Welcome</h4>
                     <h1 class="hero-heading">Let's Discuss your Solution</h1>
                     <!--<a data-w-id="cf1ec272-e99d-1a8b-3b85-e5d3c2a9a1eb" style="opacity:0" href="https://www.ceferin.com/contact/" target="_blank" class="button gold-button w-button">
-                Get in Touch<span class="button-overlay dark-button-overlay"> </span>
-            </a>-->
+                        Get in Touch<span class="button-overlay dark-button-overlay"> </span>
+                    </a>-->
                 </div>
             </div>
 
@@ -486,17 +504,17 @@
         <div class="section contact-page wf-section">
             <div class="container">
                 <div class="column cta-column centered-column">
-                   
+
                     <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>-->
                     <div id="myForm" class="contact-form w-form">
-                        
+
                         <!--<form id="email-form" name="email-form" data-name="Email Form" class="form contact-form">
-                                <input type="text" class="form-field contact-field w-input" maxlength="256" name="Name-3" data-name="Name 3" placeholder="Enter your name" id="Name-3" required="">
-                                <input type="email" class="form-field contact-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" id="email-2" required="">
-                                <textarea placeholder="Send us a message." maxlength="5000" id="Message-2" name="Message-2" data-name="Message 2" required="" class="form-field text-area-field w-input">
-    </textarea>
-                                <input type="submit" value="Submit" data-wait="Please wait..." class="button dark-button submit-button w-button">
-                            </form>-->
+                                                    <input type="text" class="form-field contact-field w-input" maxlength="256" name="Name-3" data-name="Name 3" placeholder="Enter your name" id="Name-3" required="">
+                                                    <input type="email" class="form-field contact-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" id="email-2" required="">
+                                                    <textarea placeholder="Send us a message." maxlength="5000" id="Message-2" name="Message-2" data-name="Message 2" required="" class="form-field text-area-field w-input">
+                        </textarea>
+                                                    <input type="submit" value="Submit" data-wait="Please wait..." class="button dark-button submit-button w-button">
+                                                </form>-->
 
                         <form id="my-form" data-email="jamespeterjacob@gmail.com" action="https://script.google.com/macros/s/AKfycbwg2rSpatHAObpLMoc5frNWwSkWB6taJCzwwo8h/exec" method="POST" class="form contact-form">
                             <!--<span style="color:black; font-size:30px; font-weight:300; float:right" class="close" onclick="closeForm()">&times;</span>-->
@@ -533,7 +551,7 @@
             </div>
 
         </div>
-        
+
 
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
@@ -665,5 +683,6 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+    
 </body>
 </html>
