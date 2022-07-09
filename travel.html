@@ -243,8 +243,78 @@
             }
         }
     </style>
+    <style>
+        /*.body::-webkit-scrollbar {
+            display: none;
+        }*/
+        .websidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 10000;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 0;
+            text-align: center;
+        }
+
+            .websidenav a {
+                /*padding: 8px 8px 8px 8px;*/
+                text-decoration: none;
+                font-size: 5px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .websidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .websidenav .closebtn {
+                position: sticky;
+                top: 30px;
+                left: 0px;
+                font-size: 36px;
+                margin-left: 80%;
+                max-width: 50%;
+                background-color: #ff4b27;
+                border-radius: 50px 0px 0px 50px;
+                color: White;
+                text-align: center;
+            }
+
+
+            .websidenav::-webkit-scrollbar {
+                display: inline-block;
+            }
+
+            .websidenav::-webkit-scrollbar {
+                width: 20px;
+            }
+
+            /* Track */
+            .websidenav::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey;
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            .websidenav::-webkit-scrollbar-thumb {
+                background: #ff4b27;
+                border-radius: 10px;
+            }
+
+                /* Handle on hover */
+                .websidenav::-webkit-scrollbar-thumb:hover {
+                    background: #b30000;
+                }
+    </style>
 </head>
-<body>
+<body oncontextmenu="return false">
     <main class="main">
         <div data-w-id="98fdd1f9-5ab3-db13-fe15-8c570581527d" class="section hero wf-section" style="height: 400px;">
             <!--Mobile Navbar-->
@@ -590,27 +660,25 @@
                     <h1 class="hero-heading">Travel Templates</h1>
                 </div>
             </div>
-
         </div>
-
     </main>
 
     <div class="section listings-section wf-section" style="min-height:100%;padding-top:0px; padding-left:0px;padding-right:0px">
         <div id="fashion" class="tabcontent" style="min-height:100%; text-align:center">
-            
+
             <div class="container">
                 <div data-w-id="73fb2a34-323e-3da3-70de-09d51b809686" style="opacity:0" class="column centered-text">
                     <!--<h3 class="layout-heading">Main Layout</h3>
                     <div class="separator"></div>-->
-                    <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" href="" target="_blank" class="layout-shot-container w-inline-block">
-                        <img src="https://www.ceferin.com/Travel-1.webp" alt="Main Layout Screenshot" data-w-id="19d0a13b-371c-e1ea-510d-08dec7a077f4" class="layout-shot lazyload" />
+                    <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
+                        <img src="https://www.ceferin.com/Travel-1.webp" alt="Main Layout Screenshot" class="layout-shot lazyload" onclick="openWeb1()" style="max-width:100%" />
                     </a>
                 </div>
                 <div data-w-id="fc6d03ae-e161-c98a-ceba-2a2e3df138f2" style="opacity:0" class="column centered-text">
                     <!--<h3 class="layout-heading">Parallax Layout</h3>
                     <div class="separator"></div>-->
-                    <a data-w-id="fc6d03ae-e161-c98a-ceba-2a2e3df138f3" href="" target="_blank" class="layout-shot-container w-inline-block">
-                        <img src="https://www.ceferin.com/Travel-2.webp" alt="Parallax Layout Screenshot" data-w-id="fc6d03ae-e161-c98a-ceba-2a2e3df138f4" class="layout-shot lazyload" />
+                    <a data-w-id="fc6d03ae-e161-c98a-ceba-2a2e3df138f3" class="layout-shot-container w-inline-block">
+                        <img src="https://www.ceferin.com/Travel-2.webp" alt="Parallax Layout Screenshot" class="layout-shot lazyload" onclick="openWeb2()" style="max-width:100%" />
                     </a>
                 </div>
             </div>
@@ -618,18 +686,36 @@
                 <div data-w-id="bf0389e8-ba0f-92a6-0260-c95da466046d" style="opacity:0" class="column centered-text">
                     <!--<h3 class="layout-heading">Animated Layout</h3>
                     <div class="separator"></div>-->
-                    <a data-w-id="bf0389e8-ba0f-92a6-0260-c95da466046e" href="" target="_blank" class="layout-shot-container w-inline-block">
-                        <img src="https://www.ceferin.com/Travel-3.webp" alt="Animated Layout" data-w-id="bf0389e8-ba0f-92a6-0260-c95da466046f" class="layout-shot lazyload" />
+                    <a data-w-id="bf0389e8-ba0f-92a6-0260-c95da466046e" class="layout-shot-container w-inline-block">
+                        <img src="https://www.ceferin.com/Travel-3.webp" alt="Animated Layout" class="layout-shot lazyload" onclick="openWeb3()" style="max-width:100%" />
                     </a>
                 </div>
                 <div data-w-id="bf0389e8-ba0f-92a6-0260-c95da4660470" style="opacity:0" class="column centered-text">
                     <!--<h3 class="layout-heading">Video Header Layout</h3>
                     <div class="separator"></div>-->
-                    <a data-w-id="bf0389e8-ba0f-92a6-0260-c95da4660471" href="" target="_blank" class="layout-shot-container w-inline-block">
-                        <img src="https://www.ceferin.com/Travel-4.webp" alt="Video Header Layout" data-w-id="bf0389e8-ba0f-92a6-0260-c95da4660472" class="layout-shot lazyload" />
+                    <a data-w-id="bf0389e8-ba0f-92a6-0260-c95da4660471" class="layout-shot-container w-inline-block">
+                        <img src="https://www.ceferin.com/Travel-4.webp" alt="Video Header Layout" class="layout-shot lazyload" onclick="openWeb4()" style="max-width:100%" />
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div>
+        <div id="web1" class="websidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeWeb1()">&times; Close</a>
+            <img src="https://www.ceferin.com/Travel-1.webp" target="_blank" style="width:100%" />
+        </div>
+        <div id="web2" class="websidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeWeb2()">&times; Close</a>
+            <img src="https://www.ceferin.com/Travel-2.webp" target="_blank" style="width:100%" />
+        </div>
+        <div id="web3" class="websidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeWeb3()">&times; Close</a>
+            <img src="https://www.ceferin.com/Travel-3.webp" target="_blank" style="width:100%" />
+        </div>
+        <div id="web4" class="websidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeWeb4()">&times; Close</a>
+            <img src="https://www.ceferin.com/Travel-4.webp" target="_blank" style="width:100%" />
         </div>
     </div>
 
@@ -810,7 +896,32 @@
 
         gtag('config', 'UA-169231947-1');
     </script>
-
+    <script>
+        function openWeb1() {
+            document.getElementById("web1").style.width = "100%";
+        }
+        function closeWeb1() {
+            document.getElementById("web1").style.width = "0";
+        }
+        function openWeb2() {
+            document.getElementById("web2").style.width = "100%";
+        }
+        function closeWeb2() {
+            document.getElementById("web2").style.width = "0";
+        }
+        function openWeb3() {
+            document.getElementById("web3").style.width = "100%";
+        }
+        function closeWeb3() {
+            document.getElementById("web3").style.width = "0";
+        }
+        function openWeb4() {
+            document.getElementById("web4").style.width = "100%";
+        }
+        function closeWeb4() {
+            document.getElementById("web4").style.width = "0";
+        }
+    </script>
 
 
 </body>
