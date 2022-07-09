@@ -252,19 +252,19 @@
             width: 0;
             position: fixed;
             z-index: 10000;
-            top: 0px;
-            left: 0px;
+            top: 0;
+            left: 0;
             background-color: #111;
             overflow-x: hidden;
             transition: 0.5s;
-            padding-top: 0px;
+            padding-top: 0;
             text-align: center;
         }
 
             .websidenav a {
-                padding: 8px 8px 8px 8px;
+                /*padding: 8px 8px 8px 8px;*/
                 text-decoration: none;
-                font-size: 25px;
+                font-size: 5px;
                 color: #818181;
                 display: block;
                 transition: 0.3s;
@@ -276,13 +276,15 @@
 
             .websidenav .closebtn {
                 position: sticky;
-                top: 0px;
-                right: 0px;
+                top: 30px;
+                left: 0px;
                 font-size: 36px;
-                /*margin-left: 50px;*/
-                width:100%;
-                background-color:transparent;
-                text-align:right;
+                margin-left: 80%;
+                max-width: 50%;
+                background-color: #ff4b27;
+                border-radius: 50px 0px 0px 50px;
+                color: White;
+                text-align: center;
             }
 
 
@@ -300,10 +302,10 @@
                 }
 
         /* Handle */
-                .websidenav::-webkit-scrollbar-thumb {
-                    background: red;
-                    border-radius: 10px;
-                }
+            .websidenav::-webkit-scrollbar-thumb {
+                background: #ff4b27;
+                border-radius: 10px;
+            }
 
             /* Handle on hover */
                     .websidenav::-webkit-scrollbar-thumb:hover {
@@ -895,7 +897,7 @@
         <div class="">
             <div id="web1" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb1()">&times; Close</a>
-                <img src="https://www.ceferin.com/RealEstate-6.webp" target="_blank" style="width:100%;" />
+                <img src="https://www.ceferin.com/RealEstate-6.webp" target="_blank" style="width:100%" />
             </div>
             <div id="web2" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb2()">&times; Close</a>
