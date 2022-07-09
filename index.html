@@ -243,6 +243,73 @@
             }
         }
     </style>
+    <style>
+        /*.body::-webkit-scrollbar {
+            display: none;
+        }*/
+        .websidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 10000;
+            top: 0px;
+            left: 0px;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 0px;
+            text-align: center;
+        }
+
+            .websidenav a {
+                padding: 8px 8px 8px 8px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .websidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .websidenav .closebtn {
+                position: sticky;
+                top: 0px;
+                right: 0px;
+                font-size: 36px;
+                /*margin-left: 50px;*/
+                width:100%;
+                background-color:transparent;
+                text-align:right;
+            }
+
+
+                .websidenav::-webkit-scrollbar {
+                    display: inline-block;
+                }
+                .websidenav::-webkit-scrollbar {
+                    width: 20px;
+                }
+
+        /* Track */
+                .websidenav::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 5px grey;
+                    border-radius: 10px;
+                }
+
+        /* Handle */
+                .websidenav::-webkit-scrollbar-thumb {
+                    background: red;
+                    border-radius: 10px;
+                }
+
+            /* Handle on hover */
+                    .websidenav::-webkit-scrollbar-thumb:hover {
+                        background: #b30000;
+                    }
+    </style>
 </head>
 <body oncontextmenu="return false">
     <main class="main">
@@ -273,7 +340,7 @@
                                 </a>
                                 <div class="mobile-link-dropdown">
                                     <div class="">
-                                        <a href="https://www.ceferin.com/responsivewebsitedesign.html"  class="mobile-menu-link">
+                                        <a href="https://www.ceferin.com/responsivewebsitedesign.html" class="mobile-menu-link">
                                             <span class="sub-menu-line">—</span> Responsive Website Design
                                         </a>
                                         <a href="https://www.ceferin.com/applicationdevelopment.html" class="mobile-menu-link">
@@ -285,13 +352,13 @@
                                         <a href="https://www.ceferin.com/websiteupliftment.html" class="mobile-menu-link">
                                             <span class="sub-menu-line">—</span> Website Upliftment
                                         </a>
-                                        <a href="https://www.ceferin.com/websiteadministration.html"  class="mobile-menu-link">
+                                        <a href="https://www.ceferin.com/websiteadministration.html" class="mobile-menu-link">
                                             <span class="sub-menu-line">—</span> Website Administration
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                         
+
                             <div class="mobile-link-wrap" style="height: 28px;">
                                 <a data-w-id="12d9504f-4839-1aa1-f0da-50c5dbf4d808" class="mobile-menu-link">
                                     Portfolio
@@ -392,7 +459,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            
+
                                 <div data-w-id="5175ca93-7e91-518b-7bc9-cd218a7ff587" class="link-wrap">
                                     <a data-w-id="5175ca93-7e91-518b-7bc9-cd218a7ff588" class="nav-link">
                                         Portfolio
@@ -680,20 +747,21 @@
                                         <div data-w-id="73fb2a34-323e-3da3-70de-09d51b809686" style="opacity:0" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Real Estate</h3>
                                             <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/RealEstate-6.webp" alt="Real Estate" class="layout-shot lazyload" loading="lazy" />
+                                                <img src="https://www.ceferin.com/RealEstate-6.webp" alt="Real Estate" class="layout-shot lazyload" loading="lazy" onclick="openWeb1()" style="max-width:100%" />
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="carousel-slide w-slide" aria-label="2 of 10" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
                                 <div class="w-dyn-list" aria-hidden="true">
                                     <div role="list" class="w-dyn-items" aria-hidden="true">
-                                      
+
                                         <div data-w-id="73fb2a34-323e-3da3-70de-09d51b809686" style="opacity:0" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Education</h3>
-                                            <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6"  class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/Education-2.webp" alt="Education" class="layout-shot lazyload" loading="lazy" />
+                                            <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
+                                                <img src="https://www.ceferin.com/Education-2.webp" alt="Education" class="layout-shot lazyload" loading="lazy" onclick="openWeb2()" style="max-width:100%" />
                                             </a>
                                         </div>
                                     </div>
@@ -705,7 +773,7 @@
                                         <div data-w-id="47f93a2c-57a2-9363-a396-818f6648880b" style="opacity:1" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Healthcare</h3>
                                             <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/Healthcare-3.webp" alt="Healthcare" class="layout-shot lazyload" loading="lazy" />
+                                                <img src="https://www.ceferin.com/Healthcare-3.webp" alt="Healthcare" class="layout-shot lazyload" loading="lazy" onclick="openWeb3()" style="max-width:100%"/>
                                             </a>
                                         </div>
                                     </div>
@@ -717,7 +785,7 @@
                                         <div data-w-id="47f93a2c-57a2-9363-a396-818f6648880b" style="opacity:1" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Hospitality</h3>
                                             <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/Hospitality-1.webp" alt="Hospitality" class="layout-shot lazyload" loading="lazy" />
+                                                <img src="https://www.ceferin.com/Hospitality-1.webp" alt="Hospitality" class="layout-shot lazyload" loading="lazy" onclick="openWeb4()" style="max-width:100%" />
                                             </a>
                                         </div>
                                     </div>
@@ -726,11 +794,11 @@
                             <div class="carousel-slide w-slide" aria-label="5 of 10" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
                                 <div class="w-dyn-list" aria-hidden="true">
                                     <div role="list" class="w-dyn-items" aria-hidden="true">
-                                   
+
                                         <div data-w-id="47f93a2c-57a2-9363-a396-818f6648880b" style="opacity:1" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Entertainment</h3>
                                             <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/Store-4.webp" alt="Ecommerce" class="layout-shot lazyload" loading="lazy" />
+                                                <img src="https://www.ceferin.com/Store-4.webp" alt="Ecommerce" class="layout-shot lazyload" loading="lazy" onclick="openWeb5()" style="max-width:100%" />
                                             </a>
                                         </div>
                                     </div>
@@ -742,7 +810,7 @@
                                         <div data-w-id="47f93a2c-57a2-9363-a396-818f6648880b" style="opacity:1" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Fashion</h3>
                                             <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/Fashion-2.webp" alt="Fashion" class="layout-shot lazyload" loading="lazy" />
+                                                <img src="https://www.ceferin.com/Fashion-2.webp" alt="Fashion" class="layout-shot lazyload" loading="lazy" onclick="openWeb6()" style="max-width:100%" />
                                             </a>
                                         </div>
                                     </div>
@@ -754,7 +822,7 @@
                                         <div data-w-id="47f93a2c-57a2-9363-a396-818f6648880b" style="opacity:1" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Sports</h3>
                                             <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/Store-5.webp" alt="Sports" class="layout-shot lazyload" loading="lazy" />
+                                                <img src="https://www.ceferin.com/Store-5.webp" alt="Sports" class="layout-shot lazyload" loading="lazy" onclick="openWeb7()" style="max-width:100%" />
                                             </a>
                                         </div>
                                     </div>
@@ -766,7 +834,7 @@
                                         <div data-w-id="47f93a2c-57a2-9363-a396-818f6648880b" style="opacity:1" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Fitness</h3>
                                             <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/Fitness-4.webp" alt="Fitness" class="layout-shot lazyload" loading="lazy" />
+                                                <img src="https://www.ceferin.com/Fitness-4.webp" alt="Fitness" class="layout-shot lazyload" loading="lazy" onclick="openWeb8()" style="max-width:100%" />
                                             </a>
                                         </div>
                                     </div>
@@ -778,7 +846,7 @@
                                         <div data-w-id="47f93a2c-57a2-9363-a396-818f6648880b" style="opacity:1" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Finance</h3>
                                             <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/Finance-1.webp" alt="Finance" class="layout-shot lazyload" loading="lazy" />
+                                                <img src="https://www.ceferin.com/Finance-1.webp" alt="Finance" class="layout-shot lazyload" loading="lazy" onclick="openWeb9()" style="max-width:100%" />
                                             </a>
                                         </div>
                                     </div>
@@ -787,10 +855,10 @@
                             <div class="carousel-slide w-slide" aria-label="10 of 10" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
                                 <div class="w-dyn-list" aria-hidden="true">
                                     <div role="list" class="w-dyn-items" aria-hidden="true">
-                                       <div data-w-id="47f93a2c-57a2-9363-a396-818f6648880b" style="opacity:1" class="column centered-text" role="listitem">
+                                        <div data-w-id="47f93a2c-57a2-9363-a396-818f6648880b" style="opacity:1" class="column centered-text" role="listitem">
                                             <h3 class="area-slide-heading">Photography</h3>
                                             <a data-w-id="014f13a9-e292-d1c4-a526-66fb4fd528f6" class="layout-shot-container w-inline-block">
-                                                <img src="https://www.ceferin.com/Photography-2.webp" alt="Photography" class="layout-shot lazyload" loading="lazy" />
+                                                <img src="https://www.ceferin.com/Photography-2.webp" alt="Photography" class="layout-shot lazyload" loading="lazy" onclick="openWeb10()" style="max-width:100%" />
                                             </a>
                                         </div>
                                     </div>
@@ -823,6 +891,50 @@
             </div>
 
         </div>
+
+        <div class="">
+            <div id="web1" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb1()">&times; Close</a>
+                <img src="https://www.ceferin.com/RealEstate-6.webp" target="_blank" style="width:100%;" />
+            </div>
+            <div id="web2" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb2()">&times; Close</a>
+                <img src="https://www.ceferin.com/Education-2.webp" target="_blank" style="width:100%;" />
+            </div>
+            <div id="web3" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb3()">&times; Close</a>
+                <img src="https://www.ceferin.com/Healthcare-3.webp" target="_blank" style="width:100%;" />
+            </div>
+            <div id="web4" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb4()">&times; Close</a>
+                <img src="https://www.ceferin.com/Hospitality-1.webp" target="_blank" style="width:100%;" />
+            </div>
+            <div id="web5" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb5()">&times; Close</a>
+                <img src="https://www.ceferin.com/Store-4.webp" target="_blank" style="width:100%;" />
+            </div>
+            <div id="web6" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb6()">&times; Close</a>
+                <img src="https://www.ceferin.com/Fashion-2.webp" target="_blank" style="width:100%;" />
+            </div>
+            <div id="web7" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb7()">&times; Close</a>
+                <img src="https://www.ceferin.com/Store-5.webp" target="_blank" style="width:100%;" />
+            </div>
+            <div id="web8" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb8()">&times; Close</a>
+                <img src="https://www.ceferin.com/Fitness-4.webp" target="_blank" style="width:100%;" />
+            </div>
+            <div id="web9" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb9()">&times; Close</a>
+                <img src="https://www.ceferin.com/Finance-1.webp" target="_blank" style="width:100%;" />
+            </div>
+            <div id="web10" class="websidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWeb10()">&times; Close</a>
+                <img src="https://www.ceferin.com/Photography-2.webp" target="_blank" style="width:100%;" />
+            </div>
+        </div>
+        
 
         <div data-w-id="82f8e634-78fa-19f9-4a11-b70f7e82213a" class="section dark-section wf-section">
             <div class="container">
@@ -933,11 +1045,11 @@
                 </div>
                 <div class="column footer-column">
                     <h4>Portfolio</h4>
-                        <a data-w-id="03e4d3cd-3984-02d4-132b-388788170910" href="https://www.ceferin.com/realestate.html" class="footer-link">Real Estate<span class="nav-line footer-line" style="width: 0%;"> </span></a>
-                        <a data-w-id="03e4d3cd-3984-02d4-132b-388788170900" href="https://www.ceferin.com/education.html" class="footer-link">Education<span class="nav-line footer-line" style="width: 0%;"> </span></a>
-                        <a data-w-id="03e4d3cd-3984-02d4-132b-388788170904" href="https://www.ceferin.com/healthcare.html" class="footer-link">Healthcare<span class="nav-line footer-line" style="width: 0%;"> </span></a>
-                        <a data-w-id="03e4d3cd-3984-02d4-132b-388788170908" href="https://www.ceferin.com/hospitality.html" class="footer-link">Hospitality<span class="nav-line footer-line" style="width: 0%;"> </span></a>
-                        <a data-w-id="03e4d3cd-3984-02d4-132b-38878817090c" href="https://www.ceferin.com/entertainment.html" class="footer-link">Entertainment<span class="nav-line footer-line" style="width: 0%;"> </span></a>
+                    <a data-w-id="03e4d3cd-3984-02d4-132b-388788170910" href="https://www.ceferin.com/realestate.html" class="footer-link">Real Estate<span class="nav-line footer-line" style="width: 0%;"> </span></a>
+                    <a data-w-id="03e4d3cd-3984-02d4-132b-388788170900" href="https://www.ceferin.com/education.html" class="footer-link">Education<span class="nav-line footer-line" style="width: 0%;"> </span></a>
+                    <a data-w-id="03e4d3cd-3984-02d4-132b-388788170904" href="https://www.ceferin.com/healthcare.html" class="footer-link">Healthcare<span class="nav-line footer-line" style="width: 0%;"> </span></a>
+                    <a data-w-id="03e4d3cd-3984-02d4-132b-388788170908" href="https://www.ceferin.com/hospitality.html" class="footer-link">Hospitality<span class="nav-line footer-line" style="width: 0%;"> </span></a>
+                    <a data-w-id="03e4d3cd-3984-02d4-132b-38878817090c" href="https://www.ceferin.com/entertainment.html" class="footer-link">Entertainment<span class="nav-line footer-line" style="width: 0%;"> </span></a>
                 </div>
                 <div class="column footer-column">
                     <h4>...</h4>
@@ -953,7 +1065,7 @@
                     <p class="footer-text">
                         Designed by <a href="https://www.ceferin.com/contact.html">Ceferin</a> | Copyright © 2022 <!--|-->
                         <!--<a href="">Style Guide</a> | <a href="">Licenses</a> | <a href="">User Guide</a> | <a href="">Changelog</a> |
-                        <a href="https://www.ceferin.com">Powered by Ceferin Web Solutions</a>-->
+                    <a href="https://www.ceferin.com">Powered by Ceferin Web Solutions</a>-->
                     </p>
                     <div class="footer-socials">
                         <a href="https://facebook.com/ceferin.co" target="_blank" class="footer-icon"></a>
@@ -1069,6 +1181,69 @@
 
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
+    </script>
+
+    <script>
+        function openWeb1() {
+            document.getElementById("web1").style.width = "100%";
+        }
+        function closeWeb1() {
+            document.getElementById("web1").style.width = "0";
+        }
+        function openWeb2() {
+            document.getElementById("web2").style.width = "100%";
+        }
+        function closeWeb2() {
+            document.getElementById("web2").style.width = "0";
+        }
+        function openWeb3() {
+            document.getElementById("web3").style.width = "100%";
+        }
+        function closeWeb3() {
+            document.getElementById("web3").style.width = "0";
+        }
+        function openWeb4() {
+            document.getElementById("web4").style.width = "100%";
+        }
+        function closeWeb4() {
+            document.getElementById("web4").style.width = "0";
+        }
+        function openWeb5() {
+            document.getElementById("web5").style.width = "100%";
+        }
+        function closeWeb5() {
+            document.getElementById("web5").style.width = "0";
+        }
+        function openWeb6() {
+            document.getElementById("web6").style.width = "100%";
+        }
+        function closeWeb6() {
+            document.getElementById("web6").style.width = "0";
+        }
+        function openWeb7() {
+            document.getElementById("web7").style.width = "100%";
+        }
+        function closeWeb7() {
+            document.getElementById("web7").style.width = "0";
+        }
+        function openWeb8() {
+            document.getElementById("web8").style.width = "100%";
+        }
+        function closeWeb8() {
+            document.getElementById("web8").style.width = "0";
+        }
+        function openWeb9() {
+            document.getElementById("web9").style.width = "100%";
+        }
+        function closeWeb9() {
+            document.getElementById("web9").style.width = "0";
+        }
+        function openWeb10() {
+            document.getElementById("web10").style.width = "100%";
+        }
+        function closeWeb10() {
+            document.getElementById("web10").style.width = "0";
+        }
     </script>
 
 </body>
