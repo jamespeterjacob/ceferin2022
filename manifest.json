@@ -3,37 +3,37 @@
   "short_name": "Ceferin",
   "icons": [
     {
-      "src": "https://www.ceferin.com/favicon128.png",
+      "src": "https://ceferin.com/favicon128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://www.ceferin.com/favicon144.png",
+      "src": "https://ceferin.com/favicon144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "amy"
     },
     {
-      "src": "https://www.ceferin.com/favicon152.png",
+      "src": "https://ceferin.com/favicon152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://www.ceferin.com/favicon192.png",
+      "src": "https://ceferin.com/favicon192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://www.ceferin.com/favicon256.png",
+      "src": "https://ceferin.com/favicon256.png",
       "sizes": "256x256",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://www.ceferin.com/favicon512.png",
+      "src": "https://ceferin.com/favicon512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
