@@ -168,6 +168,71 @@
                 position: fixed;
                 bottom: 20px;
             }
+            .websidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 10000;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 0;
+                text-align: center;
+            }
+
+                .websidenav a {
+                    /*padding: 8px 8px 8px 8px;*/
+                    text-decoration: none;
+                    font-size: 5px;
+                    color: #818181;
+                    display: block;
+                    transition: 0.3s;
+                }
+
+                    .websidenav a:hover {
+                        color: #f1f1f1;
+                    }
+
+                .websidenav .closebtn {
+                    position: sticky;
+                    top: 30px;
+                    left: 0px;
+                    font-size: 36px;
+                    margin-left: 80%;
+                    max-width: 50%;
+                    background-color: #ff4b27;
+                    border-radius: 50px 0px 0px 50px;
+                    color: White;
+                    text-align: center;
+                }
+
+
+                .websidenav::-webkit-scrollbar {
+                    display: inline-block;
+                }
+
+                .websidenav::-webkit-scrollbar {
+                    width: 20px;
+                }
+
+                /* Track */
+                .websidenav::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 5px grey;
+                    border-radius: 10px;
+                }
+
+                /* Handle */
+                .websidenav::-webkit-scrollbar-thumb {
+                    background: #ff4b27;
+                    border-radius: 10px;
+                }
+
+                    /* Handle on hover */
+                    .websidenav::-webkit-scrollbar-thumb:hover {
+                        background: #b30000;
+                    }
         }
 
         @media only screen and (min-width: 600px) {
@@ -701,12 +766,8 @@
                     <a data-w-id="cf1ec272-e99d-1a8b-3b85-e5d3c2a9a1eb" style="opacity:0" href="https://www.ceferin.com/contact.html" class="button gold-button">
                         Get in Touch<span class="button-overlay dark-button-overlay"> </span>
                     </a>
-                    <div id="fb-root"></div>
-
-
                 </div>
             </div>
-
         </div>
 
         <div id="Intro" class="section intro-section wf-section">
@@ -928,43 +989,43 @@
         <div class="">
             <div id="web1" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb1()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/RealEstate-6.webp" target="_blank" style="width:100%" />
+                <img alt="Real Estate" defer src="https://www.ceferin.com/RealEstate-6.webp" target="_blank" style="width:100%" />
             </div>
             <div id="web2" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb2()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/Education-2.webp" target="_blank" style="width:100%;" />
+                <img alt="Education" defer src="https://www.ceferin.com/Education-2.webp" target="_blank" style="width:100%;" />
             </div>
             <div id="web3" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb3()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/Healthcare-3.webp" target="_blank" style="width:100%;" />
+                <img alt="Healthcare" defer src="https://www.ceferin.com/Healthcare-3.webp" target="_blank" style="width:100%;" />
             </div>
             <div id="web4" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb4()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/Hospitality-1.webp" target="_blank" style="width:100%;" />
+                <img alt="Hospitality" defer src="https://www.ceferin.com/Hospitality-1.webp" target="_blank" style="width:100%;" />
             </div>
             <div id="web5" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb5()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/Store-4.webp" target="_blank" style="width:100%;" />
+                <img alt="Entertainment" defer src="https://www.ceferin.com/Store-4.webp" target="_blank" style="width:100%;" />
             </div>
             <div id="web6" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb6()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/Fashion-2.webp" target="_blank" style="width:100%;" />
+                <img alt="Fashion" defer src="https://www.ceferin.com/Fashion-2.webp" target="_blank" style="width:100%;" />
             </div>
             <div id="web7" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb7()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/Store-5.webp" target="_blank" style="width:100%;" />
+                <img alt="Ecommerce" defer src="https://www.ceferin.com/Store-5.webp" target="_blank" style="width:100%;" />
             </div>
             <div id="web8" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb8()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/Fitness-4.webp" target="_blank" style="width:100%;" />
+                <img alt="Sports" defer src="https://www.ceferin.com/Fitness-4.webp" target="_blank" style="width:100%;" />
             </div>
             <div id="web9" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb9()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/Finance-1.webp" target="_blank" style="width:100%;" />
+                <img alt="Finance" defer src="https://www.ceferin.com/Finance-1.webp" target="_blank" style="width:100%;" />
             </div>
             <div id="web10" class="websidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWeb10()">&times; Close</a>
-                <img defer src="https://www.ceferin.com/Photography-2.webp" target="_blank" style="width:100%;" />
+                <img alt="Photography" defer src="https://www.ceferin.com/Photography-2.webp" target="_blank" style="width:100%;" />
             </div>
         </div>
 
